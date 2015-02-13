@@ -7,21 +7,24 @@
     <script src="js/jquery-1.11.2.js"></script>
     <script src="js/bigtext.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Number-to-Word Converter</title>
+    <title>Word Orderer</title>
   </head>
   <body>
     <div class="container">
-      <h1>Number-to-Word Converter</h1>
+      <h1>Word Orderer</h1>
 
-    <form id="numberForm">
+    <form id="wordForm">
       <div class="form-group">
-        <input class="form-control" type="number" name="number" id="number" placeholder="Enter a number to convert" autofocus required>
+        <input class="form-control" type="text" name="words" id="words" >
+        </input>
       </div>
+      <button type="submit" class="btn btn-primary">Order</button>
     </form>
 
-    <div id="results" class="bigtext">
-      <span></span>
-    </div>
+
+      <ul>
+      </ul>
+
 
     </div>
   </body>

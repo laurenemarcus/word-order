@@ -42,3 +42,20 @@ var wordOrder = function(subjectStr) {
 
 return sortedWords;
 }
+
+$(document).ready(function () {
+  $("form#wordForm").submit(function(event) {
+    var words = $("#words").val();
+    var wordOrders = wordOrder(words);
+
+
+    wordOrders.forEach(function(word) {
+        $("ul").append("<li>" + word + "</li>");
+    });
+
+    event.preventDefault();
+
+
+  });
+
+});
